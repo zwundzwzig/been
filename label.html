@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style>
+    element.style{
+        margin:100px;
+      }
+      a{
+        color:white;
+        text-decoration: none;
+      }
+      input{
+        font:55px #ffffff;
+        margin:0;
+        border-bottom: 1px solid gray;
+        padding: 20px;
+        padding-left: 0;
+        width:149px;
+      }
+      img{
+        border-radius: 90%;
+        overflow: hidden;
+        margin:250px auto;
+        height:40px;
+        width:40px;
+      }
+    h1, p{
+      color:white;
+    }
+    body{
+      background-color:black;
+    }
+    div{
+      color:white
+    }
+    .item1 { grid-area: header; }
+    .item2 { grid-area: menu; }
+    .item3 { grid-area: main; }
+    .item4 { grid-area: footer; }
+    .wizard{
+      position:absolute;
+      top:-230px;
+      left: 180px;
+      box-shadow: 5px 10px 20px gray;
+    }
+    .button{
+      border:solid;
+      color: gray;
+      padding: 15px 15px;
+      font-size:25px;
+      border-radius: 70%
+    }
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header'
+      'menu main main main main'
+      'menu footer footer footer footer';
+    gap: 10px;
+    background-color: white;
+    margin: 100px 600px 100px 600px;
+  }
+  .grid-container1 {
+    display: grid;
+    background-color: darkgray;
+    text-align: center;
+    padding: 5px 0;
+    font:50px;
+    grid-template-areas:
+      'header menu main';
+  }
+  .grid-container > div {
+    background-color: gray;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 30px;
+  }
+  </style>
+  </head>
+  <body>
+
+  <input type="button" class="button" value="안녕하세요" onclick="
+  var target = document.querySelector('body');      if(this.value === '안녕하세요'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'HELLO';
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = '안녕하세요';
+    }
+    ">
+    <a href="yayjaj.html" title="우히우헤"> <img class="wizard" src="빈지노_나무위키.jpg"></a>
+
+  <div class="grid-container1">
+    <div class="item1"><a href="solo.html">SOLO</a></div>
+    <div class="item2"><a href="duo2.html"> DUO</a></div>
+    <div class="item3"><a href="label.html">LABEL</a></div>
+  </div>
+
+  <div class="grid-container">
+    <div class="item1">1LLIONAIRE</div>
+    <div class="item2"><iframe src="https://www.youtube.com/embed/C2KNfHc95Gs" width="300" height="175"></iframe></div>
+    <div class="item3">11 : 11</div>
+    <div class="item4">2011~2020</div>
+  </div>
+
+  <div class="grid-container">
+    <div class="item1">BANA</div>
+    <div class="item2"><iframe src="https://www.youTube.com/embed/jnl9-_B1bVk" width="300" height="175"></iframe></div>
+    <div class="item3">Nowitzki</div>
+    <div class="item4">2021~</div>
+  </div>
+
+  </body>
+  </html>

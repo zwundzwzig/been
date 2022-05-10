@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>난 이렇게 춤을 출 수도</title>
+  </head>
+  <style>
+  a{
+    color:white;
+    text-decoration: none;
+  }
+  input{
+    font:55px #ffffff;
+    margin:0;
+    border-bottom: 1px solid gray;
+    padding: 20px;
+    padding-left: 0;
+    width:170px;
+  }
+  img{
+    border-radius: 90%;
+    overflow: hidden;
+    margin:250px auto;
+    height:40px;
+    width:40px;
+  }
+  .wizard{
+    position:absolute;
+    top:-230px;
+    left: 180px;
+    box-shadow: 5px 10px 20px gray;
+  }
+  .button{
+    border:solid;
+    color: gray;
+    padding: 15px 15px;
+    font-size:25px;
+    border-radius: 70%
+  }
+  .menu{
+    overflow:hidden;
+    padding:0;
+  }
+  .menu > div {
+  width: 33.3%;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  background-color: white;
+  }
+  .menu a {
+    color: black;
+  }
+  .submenu > div {
+    line-height: 125px;
+    background-color: gray;
+  }
+  .submenu {
+    height: 0;
+  }
+  .menu > div:hover {
+  background-color: #C0C0C0;
+  transition-duration: 2s;
+  }
+  .menu > div:hover .submenu {
+    height: 250px;
+    transition-duration: 1s;
+  }
+  </style>
+  <body>
+    <input type="button" class="button" value="안녕하세요" onclick="
+    var target = document.querySelector('body');
+      if(this.value === '안녕하세요'){
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        this.value = 'HELLO';
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length) {
+          console.log(alist[i]);
+          alist[i].style.color = 'powderblue';
+          i = i + 1;
+        }
+      } else {
+        target.style.backgroundColor = 'white';
+        target.style.color = 'black';
+        this.value = '안녕하세요';
+      }
+      ">
+    <a href="https://www.youtube.com/channel/UCl-tyxErWS-1ElS8UM8jryQ" target="_blank" title="우히우헤"> <img class="wizard" src="빈지노_나무위키.jpg">
+      <div class="menu">
+        <div>
+            <a href="solo.html">SOLO</a>
+            <div class="submenu">
+              <div><a href="solo.html">SINGLE</a></div>
+              <div><a href="solo.html">ALBUM</a></div>
+            </div>
+          </div>
+          <div>
+            <a href="duo2.html">DUO</a>
+            <div class="submenu">
+              <div><a href="duo2.html">Hotclip</a></div>
+              <div><a href="duo2.html">Jazzyfact</a></div>
+            </div>
+          </div>
+          <div>
+          <a href="label.html">LABEL</a>
+          <div class="submenu">
+            <div><a href="label.html">1LLIONAIRE</a></div>
+            <div><a href="label.html">BANA</a></div>
+          </div>
+        </div>
+      </div>
+
+  </body>
+</html>
